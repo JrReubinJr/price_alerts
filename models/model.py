@@ -1,6 +1,6 @@
 from abc import ABCMeta, abstractmethod
 from common.database import Database
-from typing import Dict, List, TypeVar, Type
+from typing import Dict, List, TypeVar, Type, Union
 
 T = TypeVar('T', bound='Model')
 
@@ -32,9 +32,9 @@ class Model(metaclass=ABCMeta):
         return cls.find_one_by('_id', _id)
 
     @classmethod
-    def find_one_by(cls: Type[T], attribute: str, value: str) -> T:
+    def find_one_by(cls: Type[T], attribute: str, value: Union[str, Dict]) -> T:
         return cls(**Database.find_one(cls.collection, {attribute: value}))
 
     @classmethod
-    def find_many_by(cls: Type[T], attribute: str, value: str):
+    def find_many_by(cls: Type[T], attribute: str, value: Union[str, Dict]):
         return [cls(**elem) for elem in Database.find(cls.collection, {attribute: value})]

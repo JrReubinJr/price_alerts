@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd2b77de-6dd8-455b-868c-3f85ce95a1ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/items/new_item.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/new_item.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/alerts/new_alert.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alerts/new_alert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/items/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/items/new_item.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/alerts.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/alerts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/items.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,10 +145,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583471584010" />
-    <state x="700" y="688" key="com.intellij.ide.util.TipDialog" timestamp="1583903242823">
+    <state x="700" y="688" key="com.intellij.ide.util.TipDialog" timestamp="1584076057464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="700" y="688" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583903242823" />
+    <state x="700" y="688" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584076057464" />
     <state x="2620" y="688" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583726521475" />
   </component>
 </project>
