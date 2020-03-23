@@ -5,6 +5,7 @@ from models.item import Item
 from models.model import Model
 from models.user import User
 from dataclasses import dataclass, field
+from libs.mailgun import Mailgun
 import uuid
 
 
@@ -37,5 +38,11 @@ class Alert(Model):
     def notify_if_price_reached(self):
         if self.item.price < self.price_limit:
             print(f"Item {self.item} is now {self.item.price} and is in your budget")
+            Mailgun.send_mail(
+                ['wolsk011@umn.edu'],
+                f'Notification for {self.name}',
+                f'Your alert {self.name} has reached a price under {self.price_limit}. The latest price is {self.item.price}.  Go to {self.item.url} for more information',
+                f'<p>Your alert {self.name} has reached a price under {self.price_limit}.</p><p> The latest price is {self.item.price}.</p><p>Go to <a href="{self.item.url}">here</a> for more information</p>'
+            )
 
 

@@ -11,12 +11,16 @@
                 <p>
                     For URLs starting with <a href="{{ store.url_prefix }}">{{ store.url_prefix }}</a>
                 </p>
+                {% if session['email'] == config.ADMIN %}
                 <a class="btn btn-secondary" href="{{ url_for(stores.edit_store=store._id }}">Edit</a>
                 <a class='btn btn-danger' href="{ url_for('stores.delete_alert', store_id=store._id) }">Delete</a>
+                {% endif %}
             </div>
         {% endfor %}
     </div>
+    {% if session['email'] == config.ADMIN %}
     <a class="btn btn-primary" href="{{ url_for(stores.create_store') }}" >Create New Alert</a>
+    {% endif %}
 </section>
 
 {% endblock %}
